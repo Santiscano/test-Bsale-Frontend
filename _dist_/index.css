@@ -1,3 +1,36 @@
 @import "../_snowpack/pkg/tailwindcss/dist/base.css";
 @import "../_snowpack/pkg/tailwindcss/dist/components.css";
 @import "../_snowpack/pkg/tailwindcss/dist/utilities.css";
+
+
+/* input buscador */
+#form__input-fetch-filter{
+    /* margin-left: 180px; */
+}
+
+/* contenido tarjetas */
+#cardGrid{
+    /* margin-left: 130px; */
+}
+
+
+/* menu lateral */
+.options__menu{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    background: white;
+    width: 160px;
+}
+
+.options__menu .options_menu-category{
+    margin: 180px auto;
+}
+.options__menu .options_menu-category .itemCategory{
+    display: block;
+    margin-bottom: 26px;
+    cursor: pointer;
+}
