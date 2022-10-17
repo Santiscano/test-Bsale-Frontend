@@ -17,7 +17,7 @@
 /* menu lateral */
 .options__menu{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content:flex-start;
     position: fixed;
     top: 0;
