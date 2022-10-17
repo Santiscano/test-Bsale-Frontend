@@ -11,8 +11,10 @@ const URLSNACK ='http://localhost:8081/api/products/snack';
 const URLBEER ='http://localhost:8081/api/products/beer';
 const URLVODKA ='http://localhost:8081/api/products/vodka';
 
+
 // nodo principal donde renderizare todas las categorias   MENU PRINCIPAL
 const appNodeCategory = document.getElementById('containerCategory');
+
 // peticion API data CATEGORY
 const fetchRenderCategoryApi = async () => {
                 // peticion fetch
@@ -29,7 +31,7 @@ const fetchRenderCategoryApi = async () => {
         // name
         const nameCategory = document.createElement('h3');
         nameCategory.textContent = item.name;
-        nameCategory.className = 'itemCategory text-gray-800 text-lg font-medium mb-2 text-center';
+        nameCategory.className = 'itemCategory text-gray-800 text-lg font-medium mb-2 text-center flex-row';
         nameCategory.addEventListener('click', console.log);
 
 
@@ -41,6 +43,8 @@ const fetchRenderCategoryApi = async () => {
 }
 fetchRenderCategoryApi();
 
+
+
 const conexionConstants = async () => {
   const response = await fetch(URLCATEGORY);
   const data = await response.json();
@@ -51,12 +55,15 @@ const conexionConstants = async () => {
 setInterval(conexionConstants, 1000);
 
 
+
         // nodo principal 
   const appNodeProducts = document.getElementById('containerApp');
 
-
       // funcion para renderizar
 function renderProductFetch (data, allItems){
+  // limpio antes de buscar
+  appNodeProducts.innerHTML = "";
+  
   data.results.map(item => {
           // creo, estilizo y agrego contenido a los nodos
     // name
@@ -119,6 +126,7 @@ const productsEnergy = document.getElementById('productsEnergy');
 productsEnergy.addEventListener('click',handleOnlyEnergy);
 
 
+
 // funcion api pisco
 const handleOnlyPisco = async () => {
   console.log('peticion handleOnlyPisco')
@@ -145,6 +153,8 @@ const handleOnlyRon = async () => {
 const productsRon = document.getElementById('productsRon');
 productsRon.addEventListener('click',handleOnlyRon);
 
+
+
 // funcion api Beverage
 const handleOnlyBeverage = async () => {
   console.log('peticion handleOnlyBeverage')
@@ -156,6 +166,7 @@ const handleOnlyBeverage = async () => {
 // Boton haciendo peticion renderizar ENERGY
 const productsBeverage = document.getElementById('productsBeverage');
 productsBeverage.addEventListener('click',handleOnlyBeverage);
+
 
 
 // funcion api Snack
@@ -171,6 +182,7 @@ const productsSnack = document.getElementById('productsSnack');
 productsSnack.addEventListener('click',handleOnlySnack);
 
 
+
 // funcion api Beer
 const handleOnlyBeer = async () => {
   console.log('peticion handleOnlyBeer')
@@ -182,6 +194,7 @@ const handleOnlyBeer = async () => {
 // Boton haciendo peticion renderizar ENERGY
 const productsBeer = document.getElementById('productsBeer');
 productsBeer.addEventListener('click',handleOnlyBeer);
+
 
 
 // funcion api Vodka
