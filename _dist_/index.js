@@ -1,15 +1,15 @@
 console.log('Happy hacking :)')
 
 // variables de consulta con fetch
-const URLBASE = 'http://localhost:8081/api';
-const URLCATEGORY = 'http://localhost:8081/api/category';
-const URLENERGY ='http://localhost:8081/api/products/energy';
-const URLPISCO ='http://localhost:8081/api/products/pisco';
-const URLRON ='http://localhost:8081/api/products/ron';
-const URLBEVERAGE ='http://localhost:8081/api/products/beverage';
-const URLSNACK ='http://localhost:8081/api/products/snack';
-const URLBEER ='http://localhost:8081/api/products/beer';
-const URLVODKA ='http://localhost:8081/api/products/vodka';
+const URLBASEPRODUCTS = 'https://bsale-backend-ydx3.onrender.com/api';
+const URLCATEGORY = 'https://bsale-backend-ydx3.onrender.com/api/category';
+const URLENERGY ='https://bsale-backend-ydx3.onrender.com/api/products/energy';
+const URLPISCO ='https://bsale-backend-ydx3.onrender.com/api/products/pisco';
+const URLRON ='https://bsale-backend-ydx3.onrender.com/api/products/ron';
+const URLBEVERAGE ='https://bsale-backend-ydx3.onrender.com/api/products/beverage';
+const URLSNACK ='https://bsale-backend-ydx3.onrender.com/api/products/snack';
+const URLBEER ='https://bsale-backend-ydx3.onrender.com/api/products/beer';
+const URLVODKA ='https://bsale-backend-ydx3.onrender.com/api/products/vodka';
 
 
 // nodo principal donde renderizare todas las categorias   MENU PRINCIPAL
